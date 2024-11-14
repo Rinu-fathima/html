@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Color change</title>
+		<style>
+			div
+			{
+			text-align:center;
+			margin-top:300px;
+			}
+			#colorButton
+			{
+			font-size:18px;
+			color:white;
+			background-color:black;
+			border-radius:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<div>
+		<button id="colorButton">Change Background color</button>
+	</div>
+	</body>
+		<script>
+			const button=document.getElementById('colorButton');
+			button.addEventListener('click',myfunction);
+			button.addEventListener('dblclick',myfnctn);
+		
+			function myfunction()
+			{
+				document.body.style.backgroundColor='red';
+			}
+			
+			function myfnctn()
+			{
+				document.body.style.backgroundColor='green';
+			}
+		
+		
+		
+		</script>
+</html>
